@@ -1,0 +1,88 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Контейнер для центрирования контента */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стили для заголовков */
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Верхняя часть страницы */
+header {
+    background-color: #0088cc;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* Кнопка Telegram */
+.telegram-btn {
+    background-color: #0088cc;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.telegram-btn:hover {
+    background-color: #006fa6;
+}
+
+/* Раздел с статьями */
+.articles {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.articles article {
+    background-color: #f9f9f9;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.articles h3 {
+    color: #0088cc;
+}
+
+.articles a {
+    text-decoration: none;
+    color: #0088cc;
+    font-weight: bold;
+}
+
+/* Нижняя часть страницы */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
