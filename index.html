@@ -19,10 +19,14 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
         nav {
             display: flex;
             gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
         }
         nav a {
             color: white;
@@ -34,8 +38,10 @@
         }
         .office-title {
             font-family: 'Pacifico', cursive;
-            font-size: 36px;
+            font-size: 24px;
             color: white;
+            text-align: center;
+            width: 100%;
         }
         main {
             text-align: center;
@@ -65,16 +71,69 @@
             font-size: 24px;
             margin-bottom: 10px;
         }
-        section p {
+        section p, section ul {
             font-size: 16px;
             color: #555;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+        section ul li {
+            margin-bottom: 10px;
         }
         footer {
-            margin-top: 50px;
             font-size: 14px;
             color: #777;
             text-align: center;
             padding: 10px;
+        }
+
+        /* Адаптация для экранов шириной до 768px */
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 16px;
+            }
+            .telegram-button {
+                font-size: 16px;
+                padding: 12px 25px;
+            }
+            .office-title {
+                font-size: 20px;
+            }
+            section h2 {
+                font-size: 20px;
+            }
+            section p, section ul {
+                font-size: 14px;
+            }
+        }
+
+        /* Адаптация для экранов шириной до 480px */
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            nav a {
+                font-size: 14px;
+            }
+            .telegram-button {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+            .office-title {
+                font-size: 18px;
+            }
+            section h2 {
+                font-size: 18px;
+            }
+            section p, section ul {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
