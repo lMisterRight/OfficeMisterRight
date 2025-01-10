@@ -3,45 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Работа в вебкам-студии</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Сайт для привлечения моделей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .telegram-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #0088cc;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .telegram-button:hover {
+            background-color: #005f99;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-    <!-- Верхняя часть страницы -->
-    <header>
-        <div class="container">
-            <h1>Добро пожаловать в нашу вебкам-студию</h1>
-            <p>Хотите стать моделью? Узнайте, как начать карьеру!</p>
-            <a href="https://t.me/ваш_телеграм_аккаунт" target="_blank">
-                <button class="telegram-btn">Связаться в Telegram</button>
-            </a>
-        </div>
-    </header>
-
-    <!-- Раздел с статьями -->
-    <section class="articles">
-        <div class="container">
-            <h2>Полезные статьи для моделей</h2>
-            <article>
-                <h3>Как стать успешной моделью</h3>
-                <p>Советы и рекомендации для начинающих...</p>
-                <a href="#">Читать больше</a>
-            </article>
-            <article>
-                <h3>Как увеличить доход в вебкам-индустрии</h3>
-                <p>Техника для эффективного общения с клиентами...</p>
-                <a href="#">Читать больше</a>
-            </article>
-        </div>
-    </section>
-
-    <!-- Нижняя часть страницы -->
+    <h1>Добро пожаловать!</h1>
+    <p>Работайте в комфортных условиях и зарабатывайте с нами.</p>
+    <a href="https://t.me/lMisterRight" target="_blank" class="telegram-button">Связаться в Telegram</a>
     <footer>
-        <div class="container">
-            <a href="https://t.me/ваш_телеграм_аккаунт" target="_blank">
-                <button class="telegram-btn">Связаться в Telegram</button>
-            </a>
-        </div>
+        &copy; 2025 Ваш бренд. Все права защищены.
     </footer>
 </body>
 </html>
