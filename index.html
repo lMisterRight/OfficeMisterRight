@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Office Mr.Right</title>
-    <!-- Подключение шрифта из Google Fonts -->
+    <title>Главная — Office Mr.Right</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
         body {
@@ -19,14 +18,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
         }
         nav {
             display: flex;
             gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 10px;
         }
         nav a {
             color: white;
@@ -40,8 +35,6 @@
             font-family: 'Pacifico', cursive;
             font-size: 24px;
             color: white;
-            text-align: center;
-            width: 100%;
         }
         main {
             text-align: center;
@@ -55,35 +48,11 @@
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
-            text-align: center;
             margin-top: 20px;
             transition: background-color 0.3s ease;
         }
         .telegram-button:hover {
             background-color: #005f99;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-        section h2 {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        section p, section ul {
-            font-size: 16px;
-            color: #555;
-            text-align: left;
-            margin: 0 auto;
-            max-width: 600px;
-        }
-        section ul {
-            list-style: none;
-            padding: 0;
-        }
-        section ul li {
-            margin-bottom: 10px;
         }
         footer {
             font-size: 14px;
@@ -91,99 +60,24 @@
             text-align: center;
             padding: 10px;
         }
-
-        /* Адаптация для экранов шириной до 768px */
-        @media (max-width: 768px) {
-            nav a {
-                font-size: 16px;
-            }
-            .telegram-button {
-                font-size: 16px;
-                padding: 12px 25px;
-            }
-            .office-title {
-                font-size: 20px;
-            }
-            section h2 {
-                font-size: 20px;
-            }
-            section p, section ul {
-                font-size: 14px;
-            }
-        }
-
-        /* Адаптация для экранов шириной до 480px */
-        @media (max-width: 480px) {
-            nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-            nav a {
-                font-size: 14px;
-            }
-            .telegram-button {
-                font-size: 14px;
-                padding: 10px 20px;
-            }
-            .office-title {
-                font-size: 18px;
-            }
-            section h2 {
-                font-size: 18px;
-            }
-            section p, section ul {
-                font-size: 12px;
-            }
-        }
     </style>
 </head>
 <body>
     <header>
         <div class="office-title">Mr.Right</div>
         <nav>
-            <a href="#main">Главная</a>
-            <a href="#models">Для моделей</a>
-            <a href="#contacts">Контакты</a>
-            <a href="#about">О нас</a>
+            <a href="index.html">Главная</a>
+            <a href="models.html">Для моделей</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="about.html">О нас</a>
         </nav>
     </header>
 
-    <main id="main">
+    <main>
         <h1>Office Mr.Right</h1>
         <p>Работайте в комфортных условиях и зарабатывайте с нами.</p>
         <a href="https://t.me/lMisterRight" target="_blank" class="telegram-button">Связаться в Telegram</a>
     </main>
-
-    <section id="models">
-        <h2>Для моделей</h2>
-        <p>Работа в нашей студии — это:</p>
-        <ul>
-            <li>Высокий доход и стабильные выплаты.</li>
-            <li>Полная анонимность и безопасность.</li>
-            <li>Современное оборудование и комфортные условия.</li>
-            <li>Профессиональная поддержка и обучение.</li>
-        </ul>
-        <p>Присоединяйтесь к нам, чтобы построить карьеру в вебкам-индустрии!</p>
-    </section>
-
-    <section id="contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете связаться с нами через Telegram: <a href="https://t.me/lMisterRight" target="_blank">@lMisterRight</a></p>
-        <p>Email: contact@mrright.com</p>
-    </section>
-
-    <section id="about">
-        <h2>О нас</h2>
-        <p>Приветствуем вас! Меня зовут Мистер Райт, и я — основатель студии виде-моделинга.</p>
-        <p>За три года работы в этой сфере я накопил богатый опыт, который позволяет мне эффективно обеспечивать рост моделей в их работе и финансировании.</p>
-        <p><b>Мы предлагаем:</b></p>
-        <ul>
-            <li>Профессиональный подход: индивидуальное обучение, рекомендации и поддержка на каждом этапе работы.</li>
-            <li>Постоянная поддержка: круглосуточная помощь, мотивация и советы для достижения ваших целей.</li>
-        </ul>
-        <p>Наша студия — это место, где вы можете реализовать свой потенциал и достичь финансовой свободы. Мы работаем честно, с заботой о каждой модели, потому что ваш успех — наша главная цель.</p>
-        <p><b>Присоединяйтесь к нам и начните строить своё будущее уже сегодня!</b></p>
-    </section>
 
     <footer>
         &copy; 2025 Office Mr.Right. Все права защищены.
