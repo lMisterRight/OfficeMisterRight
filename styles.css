@@ -1,88 +1,123 @@
-/* Основные стили */
+/* Общие стили для всех страниц */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
-
-/* Контейнер для центрирования контента */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.office-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: white;
+}
+main {
+    text-align: center;
     padding: 20px;
 }
-
-/* Стили для заголовков */
-h1, h2, h3 {
-    color: #333;
-}
-
-/* Верхняя часть страницы */
-header {
+.telegram-button {
+    display: inline-block;
+    padding: 15px 30px;
     background-color: #0088cc;
     color: white;
-    padding: 40px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 10px 0;
-    font-size: 1.2em;
-}
-
-/* Кнопка Telegram */
-.telegram-btn {
-    background-color: #0088cc;
-    color: white;
-    padding: 10px 20px;
+    text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
-    text-decoration: none;
     margin-top: 20px;
-    display: inline-block;
-    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-
-.telegram-btn:hover {
-    background-color: #006fa6;
+.telegram-button:hover {
+    background-color: #005f99;
 }
-
-/* Раздел с статьями */
-.articles {
-    background-color: #fff;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.articles article {
-    background-color: #f9f9f9;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.articles h3 {
-    color: #0088cc;
-}
-
-.articles a {
-    text-decoration: none;
-    color: #0088cc;
-    font-weight: bold;
-}
-
-/* Нижняя часть страницы */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
+    font-size: 14px;
+    color: #777;
     text-align: center;
+    padding: 10px;
+}
+
+/* Стили для разделов */
+section {
+    padding: 20px;
+    text-align: center;
+}
+section h1, section h2 {
+    color: #333;
+    font-size: 24px;
+}
+section p, section ul {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+section ul {
+    list-style: none;
+    padding: 0;
+}
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Адаптация для экранов шириной до 768px */
+@media (max-width: 768px) {
+    nav a {
+        font-size: 16px;
+    }
+    .telegram-button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+    .office-title {
+        font-size: 20px;
+    }
+    section h1, section h2 {
+        font-size: 20px;
+    }
+    section p, section ul {
+        font-size: 14px;
+    }
+}
+
+/* Адаптация для экранов шириной до 480px */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav a {
+        font-size: 14px;
+    }
+    .telegram-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .office-title {
+        font-size: 18px;
+    }
+    section h1, section h2 {
+        font-size: 18px;
+    }
+    section p, section ul {
+        font-size: 12px;
+    }
 }
