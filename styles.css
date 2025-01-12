@@ -1,123 +1,46 @@
-/* Общие стили для всех страниц */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-header {
+/* Скрываем навигацию на мобильных устройствах */
+.nav-menu {
+    display: none;
+    flex-direction: column;
     background-color: #333;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav {
-    display: flex;
-    gap: 15px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-.office-title {
-    font-family: 'Pacifico', cursive;
-    font-size: 24px;
-    color: white;
-}
-main {
-    text-align: center;
-    padding: 20px;
-}
-.telegram-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #0088cc;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    border: 1px solid #444;
     border-radius: 5px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+    z-index: 10;
 }
-.telegram-button:hover {
-    background-color: #005f99;
-}
-footer {
-    font-size: 14px;
-    color: #777;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Стили для разделов */
-section {
-    padding: 20px;
-    text-align: center;
-}
-section h1, section h2 {
-    color: #333;
-    font-size: 24px;
-}
-section p, section ul {
-    font-size: 16px;
-    color: #555;
+.nav-menu a {
+    padding: 10px 15px;
     text-align: left;
-    margin: 0 auto;
-    max-width: 600px;
 }
-section ul {
-    list-style: none;
-    padding: 0;
-}
-section ul li {
-    margin-bottom: 10px;
+.nav-menu a:hover {
+    background-color: #444;
 }
 
-/* Адаптация для экранов шириной до 768px */
+/* Гамбургер-иконка */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Показываем гамбургер-меню на экранах до 768px */
 @media (max-width: 768px) {
-    nav a {
-        font-size: 16px;
-    }
-    .telegram-button {
-        font-size: 16px;
-        padding: 12px 25px;
-    }
-    .office-title {
-        font-size: 20px;
-    }
-    section h1, section h2 {
-        font-size: 20px;
-    }
-    section p, section ul {
-        font-size: 14px;
-    }
-}
-
-/* Адаптация для экранов шириной до 480px */
-@media (max-width: 480px) {
     nav {
-        flex-direction: column;
-        gap: 10px;
+        display: none;
     }
-    nav a {
-        font-size: 14px;
+    .hamburger {
+        display: flex;
     }
-    .telegram-button {
-        font-size: 14px;
-        padding: 10px 20px;
-    }
-    .office-title {
-        font-size: 18px;
-    }
-    section h1, section h2 {
-        font-size: 18px;
-    }
-    section p, section ul {
-        font-size: 12px;
+    .nav-menu.show {
+        display: flex;
     }
 }
