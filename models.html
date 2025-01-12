@@ -10,7 +10,12 @@
 <body>
     <header>
         <div class="office-title">Mr.Right</div>
-        <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="nav-menu">
             <a href="index.html">Главная</a>
             <a href="models.html">Для моделей</a>
             <a href="contacts.html">Контакты</a>
@@ -33,5 +38,12 @@
     <footer>
         &copy; 2025 Office Mr.Right. Все права защищены.
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
