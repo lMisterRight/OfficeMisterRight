@@ -1,4 +1,50 @@
-/* Скрываем навигацию на мобильных устройствах */
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.office-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: white;
+}
+
+/* Навигация */
+nav {
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Гамбургер-меню */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
 .nav-menu {
     display: none;
     flex-direction: column;
@@ -19,20 +65,33 @@
     background-color: #444;
 }
 
-/* Гамбургер-иконка */
-.hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
+/* Основное содержимое */
+main {
+    text-align: center;
+    padding: 20px;
 }
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
+.telegram-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0088cc;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+.telegram-button:hover {
+    background-color: #005f99;
+}
+footer {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    padding: 10px;
 }
 
-/* Показываем гамбургер-меню на экранах до 768px */
+/* Адаптация для экранов до 768px */
 @media (max-width: 768px) {
     nav {
         display: none;
